@@ -1,0 +1,28 @@
+<html>
+<script>
+function fun(col)
+{
+switch(col)
+{
+case 'red':
+document.bgColor="#FF0000";
+break;
+case 'green':
+document.bgColor="#00FF00";
+break;
+case 'blue':
+document.bgColor="#0000FF";
+break;
+case 'pink':
+document.bgColor="pink";
+break;
+}
+}
+</script>
+<body>
+<input type="radio" name="group" value="red" onclick=fun('red')>RED</br>
+<input type="radio" name="group" value="green" onclick=fun('green')>GREEN</br>
+<input type="radio" name="group" value="blue" onclick=fun('blue')>BLUE</br>
+<input type="radio" name="group" value="pink" onclick=fun('pink')>PINK</br>
+</body>
+</html>

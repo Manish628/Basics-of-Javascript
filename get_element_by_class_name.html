@@ -1,0 +1,25 @@
+<html>
+<head>
+<style type="text/CSS">
+h1.RedText
+{
+font-family:Arial;
+color:red;
+}
+h1.GreenText
+{
+font-family:Arial;
+color:green;
+}
+</style>
+</head>
+<body>
+<h1 class="RedText">This h1 has red text class</h1>
+<h1 class="GreenText">This h1 has Green text class</h1>
+<p id="demo"></p>
+<script>
+const x=document.getElementsByClassName("RedText");
+document.getElementById("demo").innerHTML=x[0].innerHTML;
+</script>
+</body>
+</html>

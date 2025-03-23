@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>Number Validation</h1>
+<p>Enter a number from 1 to 10</p>
+<input id="number">
+<button type="button" onclick="validate()">Submit</button>
+<p id="demo"</p>
+<script>
+function validate()
+{
+let x=document.getElementById("number").value;
+let text;
+if(x<0 || x>10 || isNaN(x) || x=="")
+{
+text="invalid input";
+}
+else
+{
+text="valid Input";
+}
+document.getElementById("demo").innerHTML=text;
+}
+</script>
+</body>
+</html>
